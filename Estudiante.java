@@ -1,6 +1,6 @@
 public class Estudiante
 {
-    public String nombre;
+    private String nombre;
     private int clave;
     
     public Estudiante(int claveIni, String nombreIni)
@@ -14,4 +14,8 @@ public class Estudiante
         return "clave: " +clave+ "Estudiante: " +nombre;
     }
     
+    public int dimeClave()
+    {
+        return clave;
+    }
 }
