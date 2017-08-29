@@ -12,12 +12,30 @@ public class Grupo
 
     public void inscrbir(Estudiante unEstudiante)
     {
-        if (estudiantes[0] == null)
+        for (int i=0 ; i < 10 ; i++)
         {
-            estudiantes[0] = unEstudiante;
-            
+            if (i == 0 )
+            {
+                estudiantes[i] = unEstudiante;
+                
+            }
+            if(estudiantes[i] == null)
+            {
+                estudiantes[i] = unEstudiante;
+            }
         }
     }
-    //
-    //public void darBaja(int )
+    
+    public void darBaja(String nombre)
+    {
+        for(int i=0; i < 10; i++)
+        {
+            if(estudiantes[i].nombre == nombre)
+            {
+                estudiantes[i] = null;
+            }
+        }
+    }
+
+    
 }
